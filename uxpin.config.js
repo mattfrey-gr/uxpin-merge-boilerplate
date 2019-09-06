@@ -5,22 +5,19 @@ module.exports = {
         name: 'General',
         include: [
           'src/components/Button/Button.js',
-          'src/components/Greeting/Greeting.js',
           'src/components/Icon/Icon.js',
-          'src/components/Select/Select.js',
-          'src/components/Select/components/SelectItem/SelectItem.js',
-          'src/components/Table/Table.js',
+          'src/components/Badge/Badge.js',
+          'src/components/ListItem/ListItem.js',
         ],
       },
       {
-        name: 'Charts',
+        name: 'Messaging',
         include: [
-          'src/components/Charts/**/*.js',
-          '!src/components/Charts/**/*.styles.js',
-          '!src/components/Charts/**/__tests__/*.js',
+          'src/components/Message/Message.js',
+          'src/components/MediaObject/MediaObject.js',
         ],
       },
     ],
   },
-  name: 'UXPin Merge Boilerplate',
+  name: 'Grand Rounds Design System',
 };

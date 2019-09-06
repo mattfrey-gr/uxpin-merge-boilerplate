@@ -10,6 +10,6 @@ export default (
     stretched
     type="primary"
     uxpId="button1">
-    Matt's custom button text
+    Press Me!
   </Button>
 );
