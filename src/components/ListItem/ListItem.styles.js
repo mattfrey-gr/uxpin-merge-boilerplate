@@ -3,16 +3,18 @@ import borders from '../../styles/borders';
 import colors from '../../styles/colors';
 import typography from '../../styles/typography';
 
-export const ListItemContainer = styled('div')`
-  padding: 10px;
-  border-bottom: ${`${borders.borderStandard} ${colors.grandrounds.lighterGrey}`};
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  background-color: white;
-`;
+export const ListItemContainer = styled.div((props) => ({
+  'align-items': 'center',
+  'background-color': 'white',
+  'border-bottom': `${borders.borderStandard} ${colors.grandrounds.lighterGrey}`,
+  'border-left': props.highlight ? `5px solid ${colors.grandrounds.blueHighlight}` : 'none',
+  'border-top-left-radius': props.highlight ? '2px' : 'none',
+  display: 'flex',
+  'flex-direction': 'row',
+  'flex-wrap': 'nowrap',
+  'justify-content': 'space-between',
+  padding: '15px',
+}));
 
 export const IconContainer = styled('div')`
   padding-right: 20px;
@@ -37,10 +39,17 @@ export const PrimaryText = styled('div')`
 export const SecondaryText = styled('div')`
   font-size: ${`${typography.size.l}px`};
   color: ${colors.grandrounds.grey};
+  margin-top: 3px;
+`;
+
+export const BadgeContainer = styled('div')`
+  font-size: ${`${typography.size.s}px`};
+  margin-top: 7px;
 `;
 
 export const FooterText = styled('div')`
   font-size: ${`${typography.size.s}px`};
   color: ${colors.grandrounds.grey};
   font-weight: ${typography.weight.bold};
+  margin-top: 7px;
 `;

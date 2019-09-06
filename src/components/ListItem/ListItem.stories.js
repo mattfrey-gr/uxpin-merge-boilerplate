@@ -27,10 +27,14 @@ storiesOf('ListItem', module).addDecorator(withKnobs).add('default', () => {
   const iconSize = select('Icon Size', sizeOptions, 'xxl');
   const includeChevron = boolean('Include Chevron?', true);
   const chevronSize = select('Chevron Size', sizeOptions, 'l');
+  const highlight = boolean('Highlight?', false);
+  const highlightText = text('Highlight Text', 'New activity');
   return (
     <ListItem
       chevronSize={chevronSize}
       footer={footer}
+      highlight={highlight}
+      highlightText={highlightText}
       icon={icon}
       iconSize={iconSize}
       includeChevron={includeChevron}

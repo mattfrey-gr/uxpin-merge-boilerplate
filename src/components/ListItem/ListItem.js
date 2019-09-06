@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
+  BadgeContainer,
   FlexItemContainer,
   FooterText,
   IconContainer,
@@ -10,10 +11,11 @@ import {
   TextContainer,
 } from './ListItem.styles';
 import Icon from '../Icon/Icon';
+import Badge from '../Badge/Badge';
 import colors from '../../styles/colors';
 
 const ListItem = (props) => (
-  <ListItemContainer>
+  <ListItemContainer highlight={props.highlight}>
     <FlexItemContainer>
       {props.icon && (
         <IconContainer>
@@ -34,7 +36,14 @@ const ListItem = (props) => (
             {props.secondaryText}
           </SecondaryText>
         )}
-        {props.footer && (
+        {props.highlight && (
+          <BadgeContainer>
+            <Badge theme="highlight">
+              {props.highlightText}
+            </Badge>
+          </BadgeContainer>
+        )}
+        {props.footer && !props.highlight && (
           <FooterText>
             {props.footer}
           </FooterText>
@@ -56,6 +65,8 @@ const ListItem = (props) => (
 ListItem.propTypes = {
   chevronSize: PropTypes.oneOf(['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']),
   footer: PropTypes.string,
+  highlight: PropTypes.bool,
+  highlightText: PropTypes.string,
   icon: PropTypes.oneOf([
     'ActionAddToFavoritesSvg',
     'ActionArchiveSvg',
@@ -297,6 +308,7 @@ ListItem.propTypes = {
 
 ListItem.defaultProps = {
   chevronSize: 'l',
+  highlight: false,
   iconSize: 'xxl',
 };
 
