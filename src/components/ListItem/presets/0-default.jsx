@@ -6,6 +6,7 @@ export default (
     primaryText="Title"
     secondaryText="supporting text"
     footer="footer text"
+    highlightText="new activity"
     icon="PersonSvg"
     iconSize="xxl"
     includeChevron

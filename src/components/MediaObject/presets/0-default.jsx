@@ -1,4 +1,4 @@
 import React from 'react';
 import MediaObject from '../MediaObject';
 
-export default <MediaObject text="Media Object" />;
+export default <MediaObject text="Media Object" uxpId="mediaobject" />;
