@@ -170,6 +170,7 @@ import PadlockLockedSvg from './padlock-locked.svg';
 import PadlockUnlockedSvg from './padlock-unlocked.svg';
 import PenToolSvg from './pen-tool.svg';
 import PencilSvg from './pencil.svg';
+import PersonSvg from './person.svg';
 import PiggyBankSvg from './piggy-bank.svg';
 import PinMapSolidSvg from './pin-map-solid.svg';
 import PinMapSvg from './pin-map.svg';
@@ -401,6 +402,7 @@ export {
   PadlockUnlockedSvg,
   PenToolSvg,
   PencilSvg,
+  PersonSvg,
   PiggyBankSvg,
   PinMapSolidSvg,
   PinMapSvg,

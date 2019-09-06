@@ -12,7 +12,7 @@ const backgroundSelector = (type, mode) => {
   if (!mode) {
     switch (type) {
       case 'primary':
-        return colors.blue.base;
+        return colors.grandrounds.primaryBrand;
       case 'secondary':
         return colors.silver.base;
       case 'success':
@@ -22,7 +22,7 @@ const backgroundSelector = (type, mode) => {
       case 'warning':
         return colors.warning;
       default:
-        return colors.blue.base;
+        return colors.grandrounds.primaryBrand;
     }
   } else if (mode === 'active') {
     switch (type) {
@@ -206,7 +206,7 @@ const ButtonCommon = withProps({
   justify-content: center;
   width: ${(props) => (props.stretched ? '100%' : 'auto')};
   padding: ${(props) => setPadding(props.size, props.children)};     
-  border-radius: ${borders.borderRadius};
+  border-radius: 99999px;
   border: ${(props) => `1px solid ${backgroundSelector(props.type)}`};
   font-family: ${typography.fontFamily};
   font-weight: ${typography.weight.bold};

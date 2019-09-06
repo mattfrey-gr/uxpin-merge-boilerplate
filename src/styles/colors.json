@@ -1,4 +1,12 @@
 {
+    "grandrounds": {
+        "primaryBrand": "#6D65CD",
+        "lightBrand": "#F1F0FF",
+        "highlight": "#FAD000",
+        "blueHighlight": "#00BCB4",
+        "primaryText": "#101A20",
+        "secondaryText": "#6C7174"
+    },
     "blue": {
         "base": "#006cff",
         "dark5": "0061e6",
@@ -85,7 +93,7 @@
     "error": "#e20c00",
     "warning": "#ff7d3a",
     "hover": {
-        "primary": "#1a7bff",
+        "primary": "#6155CD",
         "secondary": "#f6f6f6",
         "success": "#70c510",
         "error": "#fb0d00",
