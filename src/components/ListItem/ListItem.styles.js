@@ -5,7 +5,7 @@ import typography from '../../styles/typography';
 
 export const ListItemContainer = styled('div')`
   padding: 10px;
-  border: ${`${borders.borderStandard} ${colors.grandrounds.lightGrey}`};
+  border-bottom: ${`${borders.borderStandard} ${colors.grandrounds.lighterGrey}`};
   display: flex;
   flex-direction: row;
   justify-content: space-between;

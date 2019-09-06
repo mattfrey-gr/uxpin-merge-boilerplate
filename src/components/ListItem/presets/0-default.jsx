@@ -10,5 +10,6 @@ export default (
     iconSize="xxl"
     includeChevron
     chevronSize="l"
+    uxpId="listitem"
   />
 );
