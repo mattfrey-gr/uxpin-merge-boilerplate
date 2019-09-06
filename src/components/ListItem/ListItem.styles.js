@@ -8,7 +8,7 @@ export const ListItemContainer = styled.div((props) => ({
   'background-color': 'white',
   'border-bottom': `${borders.borderStandard} ${colors.grandrounds.lighterGrey}`,
   'border-left': props.highlight ? `5px solid ${colors.grandrounds.blueHighlight}` : 'none',
-  'border-top-left-radius': props.highlight ? '2px' : 'none',
+  'border-top-left-radius': props.highlight ? '4px' : 'none',
   display: 'flex',
   'flex-direction': 'row',
   'flex-wrap': 'nowrap',
