@@ -18,7 +18,7 @@ const getIconSize = (size) => {
       return `${sizes.xs}px`;
   }
 };
-console.log(Icons);
+
 export default function Icon({ color, icon, size }) {
   const iconSize = getIconSize(size);
 
@@ -102,6 +102,7 @@ export const IconPaths = [
   'BuildingSvg',
   'CalendarSvg',
   'ChangelogSvg',
+  'ChevronRightSvg',
   'ChevronSvg',
   'ClockSvg',
   'CodeBlockSvg',

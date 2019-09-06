@@ -206,7 +206,7 @@ const ButtonCommon = withProps({
   justify-content: center;
   width: ${(props) => (props.stretched ? '100%' : 'auto')};
   padding: ${(props) => setPadding(props.size, props.children)};     
-  border-radius: 99999px;
+  border-radius: ${borders.borderRadius};
   border: ${(props) => `1px solid ${backgroundSelector(props.type)}`};
   font-family: ${typography.fontFamily};
   font-weight: ${typography.weight.bold};

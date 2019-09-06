@@ -5,7 +5,9 @@
         "highlight": "#FAD000",
         "blueHighlight": "#00BCB4",
         "primaryText": "#101A20",
-        "secondaryText": "#6C7174"
+        "grey": "#6C7174",
+        "lightGrey": "#C0C0C0",
+        "lighterGrey": "#F1F1F1"
     },
     "blue": {
         "base": "#006cff",

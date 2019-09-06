@@ -70,6 +70,7 @@ import BrandWindowsSvg from './brand-windows.svg';
 import BuildingSvg from './building.svg';
 import CalendarSvg from './calendar.svg';
 import ChangelogSvg from './changelog.svg';
+import ChevronRightSvg from './chevron-right.svg';
 import ChevronSvg from './chevron.svg';
 import ClockSvg from './clock.svg';
 import CodeBlockSvg from './code-block.svg';
@@ -302,6 +303,7 @@ export {
   BuildingSvg,
   CalendarSvg,
   ChangelogSvg,
+  ChevronRightSvg,
   ChevronSvg,
   ClockSvg,
   CodeBlockSvg,
